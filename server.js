@@ -4,7 +4,7 @@ const app = express()
 const ejs = require('ejs')
 const path = require('path')
 const expressLayout = require('express-ejs-layouts')
-const PORT = process.env.PORT || 3300
+const PORT = process.env.PORT || 3000
 const mongoose = require('mongoose')
 const session = require('express-session')
 const flash = require('express-flash')
@@ -90,9 +90,3 @@ eventEmitter.on('orderUpdated', (data) => {
 eventEmitter.on('orderPlaced', (data) => {
     io.to('adminRoom').emit('orderPlaced', data)
 })
-
-app.listen(PORT , () => {
-
-    console.log(`listening to the port at ${PORT}`)
-
- })
