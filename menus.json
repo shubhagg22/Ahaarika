@@ -58,8 +58,8 @@
   "_id": {
     "$oid": "5eee6717a27a66807cf2bea9"
   },
-  "name": "Pepperoni",
-  "image": "pizza.png",
-  "price": "500",
+  "name": "Garlic Bread",
+  "image": "garlic.jpg",
+  "price": "100",
   "size": "medium"
 }]
