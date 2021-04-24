@@ -91,3 +91,8 @@ eventEmitter.on('orderPlaced', (data) => {
     io.to('adminRoom').emit('orderPlaced', data)
 })
 
+app.listen(PORT , () => {
+
+    console.log(`listening to the port at ${PORT}`)
+
+ })
